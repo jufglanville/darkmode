@@ -1,16 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.primary};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
 `;
 export const lightTheme = {
-  body: '#f1f1f1',
-  text: '#121620',
+  primary: '#1c1c1c',
+  secondary: '#585757',
+  tertiary: '#969696',
+  border: '#e8e8e8',
+  background: '#f7f7f7',
+  backgroundSecondary: '#ffffff',
 };
 export const darkTheme = {
-  body: '#121620',
-  text: '#f1f1f1',
+  primary: '#e8e8e8',
+  secondary: '#bababa',
+  tertiary: '#767676',
+  border: '#313131',
+  background: '#272727',
+  backgroundSecondary: '#1a1a1a',
 };
